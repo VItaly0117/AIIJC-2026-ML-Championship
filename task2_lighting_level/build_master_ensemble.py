@@ -9,11 +9,12 @@ print("BUILDING MASTER ENSEMBLE SUBMISSION FOR TASK 2")
 print("=================================================================")
 
 submission_files = [
+    'd:/AIJC/submission_task2_mobilenet_v3.csv',
+    'd:/AIJC/submission_task2_resnet18_clean.csv',
     'd:/AIJC/submission_task2_tabular_blend.csv',
     'd:/AIJC/submission_task2_hybrid_fusion.csv',
     'd:/AIJC/submission_task2_tabular_opt.csv',
-    'd:/AIJC/submission_task2_svm.csv',
-    'd:/AIJC/submission_task2_resnet18_clean.csv'
+    'd:/AIJC/submission_task2_svm.csv'
 ]
 
 valid_subs = []
