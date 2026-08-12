@@ -9,17 +9,18 @@ print("BUILDING MASTER ENSEMBLE SUBMISSION FOR TASK 2")
 print("=================================================================")
 
 submission_files = [
-    'd:/AIJC/submission_task2.csv',
     'd:/AIJC/submission_task2_tabular_blend.csv',
+    'd:/AIJC/submission_task2_hybrid_fusion.csv',
     'd:/AIJC/submission_task2_tabular_opt.csv',
-    'd:/AIJC/submission_task2_svm.csv'
+    'd:/AIJC/submission_task2_svm.csv',
+    'd:/AIJC/submission_task2_resnet18_clean.csv'
 ]
 
 valid_subs = []
 for p in submission_files:
     if os.path.exists(p):
         df = pd.read_csv(p)
-        print(f"Found {os.path.basename(p):35s} | Shape: {df.shape} | Dist: {Counter(df['label'].tolist())}")
+        print(f"Found {os.path.basename(p):37s} | Shape: {df.shape} | Dist: {Counter(df['label'].tolist())}")
         valid_subs.append(df)
 
 if len(valid_subs) == 0:
